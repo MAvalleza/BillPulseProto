@@ -1,0 +1,67 @@
+page-home {
+	.masters{
+    background-color: white;
+  }
+
+  .site-title{
+      font-size: 20px;
+      text-align: center;
+      font-family: "Karla";
+      font-weight: bold;
+      color: #0b427c;
+
+
+      @media screen and (min-width: 768px){
+         font-size: 31px;
+         letter-spacing: 2px;
+      }
+  }
+
+  .site-navitem{
+        text-align: center;
+        margin-top: 10px;
+  }
+
+ 
+	.card-background-image{
+		position: relative;
+    	text-align: center;
+  }
+
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0;
+    font-family: "Karla";
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+    opacity: 0;
+    font-family: "Karla";
+  }
+
+  .card-background-image:hover{
+      .card-title, .card-subtitle{
+        opacity: 1;
+      }
+      img{
+        opacity: 0.80;
+      }
+      cursor: pointer;
+  }
+
+  .navbar-container{
+    width: 50%;
+  }
+
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Almond",
+  "app_id": "46a0f6d1",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

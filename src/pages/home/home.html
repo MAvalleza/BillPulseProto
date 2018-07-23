@@ -1,0 +1,93 @@
+<ion-header >
+  <ion-navbar>
+     <ion-grid>
+      <ion-row>
+        <ion-col col-3 padding>
+          <header class="site-title">BILL PULSE</header>
+
+        </ion-col>
+        <ion-col col-6 col-s-5 col-md-5>
+            <ion-searchbar
+              [(ngModel)]="myInput"
+              [showCancelButton]="shouldShowCancel"
+              (ionInput)="onInput($event)"
+              (ionCancel)="onCancel($event)">
+            </ion-searchbar>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class = "masters">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6 col-sm>
+        <ion-card class="card-background-image" (click) = "itemSelected('Deadpool')">
+          <img src="assets/imgs/dp.png"/>
+          <div class = "card-title">Deadpool</div>
+          <div class = "card-subtitle">Merc with the mouth</div>
+        </ion-card>
+
+        <ion-card class="card-background-image" (click) = "itemSelected('Iron Man')">
+          <img src="assets/imgs/ironman.jpg"/>
+          <div class = "card-title">Iron Man</div>
+          <div class = "card-subtitle">Tony Stark</div>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-6 col-sm>
+        <ion-card class="card-background-image" (click) = "itemSelected('Colossus')">
+          <img src="assets/imgs/colossus.png"/>
+          <div class = "card-title">Colossus</div>
+          <div class = "card-subtitle">X-Men</div>
+        </ion-card>
+
+        <ion-card class="card-background-image" (click) = "itemSelected('The Hulk')">
+          <img src="assets/imgs/hulk.jpeg"/>
+          <div class = "card-title item-text-wrap">The Hulk</div>
+          <div class = "card-subtitle item-text-wrap">Bruce Banner</div>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-6 col-sm>
+        <ion-card class="card-background-image" (click) = "itemSelected('Ant-Man')">
+          <img src="assets/imgs/antman.jpg"/>
+          <div class = "card-title">Ant-Man</div>
+          <div class = "card-subtitle">Scott Lang</div>
+        </ion-card>
+
+        <ion-card class="card-background-image" (click) = "itemSelected('Thor')">
+          <img src="assets/imgs/thor.jpg"/>
+          <div class = "card-title">Thor</div>
+          <div class = "card-subtitle">The God of Thunder</div>
+        </ion-card>
+
+        <ion-card class="card-background-image" (click) = "itemSelected('Captain America')">
+          <img src="assets/imgs/captainamerica.png"/>
+          <div class = "card-title">Captain America</div>
+          <div class = "card-subtitle">The First Avenger</div>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-6 col-sm>
+        <ion-card class="card-background-image" (click) = "itemSelected('Black Panther')">
+          <img src="assets/imgs/bp.jpg"/>
+          <div class = "card-title">Black Panther</div>
+          <div class = "card-subtitle">King of Wakanda</div>
+        </ion-card>
+
+        <ion-card class="card-background-image" (click) = "itemSelected('Daredevil')">
+          <img src="assets/imgs/daredevil.png"/>
+          <div class = "card-title">Daredevil</div>
+          <div class = "card-subtitle">Devil of Hell's Kitchen</div>
+        </ion-card>
+      </ion-col>
+
+
+      
+
+    </ion-row>    
+  </ion-grid>
+</ion-content>
